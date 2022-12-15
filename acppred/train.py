@@ -1,4 +1,4 @@
-from skelarn.ensemble import RandmForestCLassifier
+from sklearn.ensemble import RandomForestClassifier
 from acppred.models import Model
 
 def main():
@@ -13,5 +13,5 @@ def main():
 
     model.save('data/models/model.pickle')
 
-if__name__== '__main__':
+if __name__== '__main__':
     main()
