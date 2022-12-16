@@ -7,3 +7,4 @@
  biopython
  pytest
  flask 
+ gunicorn
