@@ -12,7 +12,7 @@ $ make setup
 Objetivo geral da criação/utilização do código: O código criado foi utilizado para o desenvolvimento de uma página web para predição de peptideos com potencial atividade anticâncer.
 
 
-Arquivo setup.py
+	Arquivo setup.py
 
 O arquivo setup.py provavelmente é um dos arquivos mais significantes que deve ser adicionado no diretório de um projeto utilizando a linguagem Python. 
 Seus maiores propósitos são:
@@ -30,7 +30,7 @@ Setuptools: Setuptools é uma coleção de aprimoramentos para os distutils Pyth
 Distutils: Já o pacote distutils fornece um suporte para a construção e instalação de módulos adicionais em uma instalação do Python.
 
 
-Arquivo requirements.txt
+	Arquivo requirements.txt
 Esse arquivo contém uma lista com itens/pacotes que serão instalados, neste caso:
 
 Scikit-learn: biblioteca de código aberto, que fornece vários recursos para modelagem estatística e suporte para aprendizagem de máquina supervisionado ou não supervisionado. Oferece variedade de algoritmos integrados, como algoritmos de classificação, regressão, agrupamento, redução de dimensionalidade, entre outros.
@@ -54,7 +54,7 @@ Flask: o flask é utilizado para desenvolver aplicações web que utilizam pytho
 Gunicorn: é um servidor python WSGI HTTP, amplamente compatível com diferentes frameworks da web, pode ser implementado de forma simples, é leve nos recursos do servidor e bastante rápido.
 
 
-Arquivo environment.yml
+	Arquivo environment.yml
 Um arquivo environment.yml nos mostra a lista de dependências, e em quais canais prioriza-se que estas sejam baixadas, neste caso:
 
 	Canais:
@@ -62,23 +62,24 @@ Bioconda: O canal bioconda possibilita a instalação de pacotes que estão rela
 Conda-forge: é um organização comunitária do GitHub, que contém diferentes receitas conda, ou seja, fornece pacotes conda para diferentes softwares.
 
 	Dependências: dependências do software são as bibliotecas ou pacotes que são reutilizados um novo software.
+	
   
   
-Arquivo Makefile
+	Arquivo Makefile
 Os arquivos makefile são criados para que se possa executar ou atualizar uma tarefa quando determinados arquivos forem atualizados. O arquivo makefile determina qual o conjunto de tarefas que deve ser executado. De maneira geral, o makefile também pode ser utilizado para automatização do processo de construção de um software e tarefas complexas com dependências. 
 
 conda env create: criação de um ambiente para desenvolvimento Python utilizando o conda. 
 conda env update: atualização para a última versão.
 
 
-Arquivo .gitignore
+	Arquivo .gitignore
 
 O arquivo .gitignore informa ao Git quais são os arquivos que devem ser ignorados no momento em que o projeto é enviado para o repositório GitHub.
 
 
 PASTA TESTS:
 
-Arquivo test_model.py
+	Arquivo test_model.py
 
 Palavras-chaves dentro do arquivo:
 
@@ -108,7 +109,7 @@ Pickle: é usado para serialização e deserialização da estrutura de um objet
 PASTA NOTEBOOKS
 	Criada no Jupyter Notebooks
 
-Arquivo EDA.ipynb
+	Arquivo EDA.ipynb
 	
 A análise exploratória de dados (EDA) é uma abordagem para análise de conjuntos de dados que resume as principais características destes, podendo ou não um método estatístico ser utilizado.
 	
@@ -131,17 +132,17 @@ Com a análise exploratória de dados também podemos observar os parâmetros qu
 
 PASTA DATA
 
-Arquivo results.cvs
+	Arquivo results.cvs
 Mostra os resultados de predição que foram gerados, com os nomes que foram colocados nos peptídeos analisados.
-Arquivo models.pickle
+	Arquivo models.pickle
 Meu github mostrava a seguinte mensagem ao abrir este arquivo: “(Sorry about that, but we can’t show files that are this big right now.)”
-Arquivo example.fasta
+	Arquivo example.fasta
 Arquivo com os nomes atribuídos as sequências fastas utilizadas dos peptídeos que foram analisados, mas ainda sem o valor atribuído após a análise.
 
 
 PASTA TESTS:
 	
-Arquivo model.pickle: não aparecia nada neste arquivo, apesar de marcar 782 bytes.
+	Arquivo model.pickle: não aparecia nada neste arquivo, apesar de marcar 782 bytes.
 
 
 PASTA RAW:
@@ -159,22 +160,22 @@ PASTA ACPPRED
 templates/index.html
 Pasta templates com o único arquivo index.html, ou seja, um arquivo que contém o texto que será visualizado na página de predição de epítopos anticâncer quando esta for acessada.
 
-<!DOCTYPE html>: tag utilizada para especificar qual é a versão do HTML o documento está utilizando, chamado de declaração do tipo de documento.
+!DOCTYPE html: tag utilizada para especificar qual é a versão do HTML o documento está utilizando, chamado de declaração do tipo de documento.
 
-<html lang="en">: atributo que ajuda a definir o idioma de um elemento, ou seja, a língua em que elementos não editáveis serão escritos, ou a língua em que elementos editáveis deverão ser escritos pelo usuário.
+html lang="en": atributo que ajuda a definir o idioma de um elemento, ou seja, a língua em que elementos não editáveis serão escritos, ou a língua em que elementos editáveis deverão ser escritos pelo usuário.
 
-<head>: “cabeça” do documento HTML, serve para as informações gerais (metadados) do documento, como títulos, links para scripts e outros, dentro dessa temos a indicação com o comando de codificação dos caracteres que serão utilizados (<meta charset="UTF-8">) e também a indicação do título da página (acppred) e indicação do término da cabeça do documento <head> e o início do “corpo do texto”.
+head: “cabeça” do documento HTML, serve para as informações gerais (metadados) do documento, como títulos, links para scripts e outros, dentro dessa temos a indicação com o comando de codificação dos caracteres que serão utilizados (<meta charset="UTF-8">) e também a indicação do título da página (acppred) e indicação do término da cabeça do documento <head> e o início do “corpo do texto”.
 
-<body>: representa o contéudo em sí do documento em HTML.
+body: representa o contéudo em sí do documento em HTML.
 
-<hr>: representa uma mudança entre elementos em nível de parágrafos, por exemplo.
+hr: representa uma mudança entre elementos em nível de parágrafos, por exemplo.
 
-</div>: é um container para agrupar elementos.
+div: é um container para agrupar elementos.
 
-</form>: submete os dados que o usuário der entrada para um programa que se encarregará de processar esses dados, de acordo com aquilo que o desenvolvedor solicitou do programa.	
+form: submete os dados que o usuário der entrada para um programa que se encarregará de processar esses dados, de acordo com aquilo que o desenvolvedor solicitou do programa.	
 
 
-Arquivo models.py
+	Arquivo models.py
 
 Modelos são geralmente definidos no arquivo models.py em uma aplicação.
 	
@@ -209,7 +210,7 @@ loads: é usado para converter o documento JSON string no dicionário python de 
 read( ): retorna o número especificado de bytes de um arquivo.
 
 
-Arquivo predict.py
+	Arquivo predict.py
 
 Palavras-chave:
 
@@ -224,7 +225,7 @@ add_argument: anexa especificações de argumentos individuais ao analisador.
 parse_args( ): executa o analisador e coloca os dados extraídos em um objeto argparse.
 
 
-Arquivo serve.py
+	Arquivo serve.py
 
 Palavras-chave:
 	
@@ -239,14 +240,14 @@ method =: uma função que pertence a um objeto.
 get: o método get retorna com o valor do item com a chave que foi especificada. 
 
 
-Arquivo train.py
+	Arquivo train.py
 
 Palavras-chave: 
 	
 print: exibe as mensagens na tela.
 
 
-Arquivo utils.py
+	Arquivo utils.py
 	
 Lista das letras que são permitidas como válidas para compor a listagem de peptídeos.
 
